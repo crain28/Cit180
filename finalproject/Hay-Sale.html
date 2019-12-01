@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Hay Sale Form</title>
+<link rel="stylesheet" href="css/Hay-Sales.css">
+<style type="text/css">
+</style>
+</head>
+<body style="background:url(media/BalesR.jpg); background-size: 100%, 100%;" >
+<article>	
+	    <h1 style="width:60%;"> Hay Sales Form</h1>
+		<form name="confirmation" id="confirmation" action="http://lisabalbach.com/CIT180/Lesson8/FormProcessor.html" method="get" >
+		<input type="hidden" name="mailto" id="mailto" value="mailto:crain28@mail.nmc.edu">
+		<section class="row">
+				<nav class="col-3 col-m-3">
+			   <ul>
+			   <li><a href="index.html">Main Page</a></li>
+			   <li><a href="Hay-Sale.html">Hay Sales Form</a></li>
+			  	</ul>
+			</nav>
+		<fieldset class="center">
+			<legend>Address Information:</legend>
+			<p><label for="name"  >Name:</label>
+			<input type="text" id="name" name="name" size="30"  required autofocus/><br /></p>
+			<p><label for="address" >Address:</label>
+			<input  type="text" id="address" name="address" size="50"  /> <br/></p>
+			<p><label for="city"  >City:</label>
+			<input type="text"  id="city" name="city" size="20"/></p>
+			<p><label for="state"  >State:</label><input type="text"  id="state" name="state" size="5" value="MI" /></p>
+			<p><label for="zip"   >Zip:</label><input type="text"  id="zip" name="zip" size="10"/><br/></p>
+			<p><label for="telephone"  >Cell#:</label>
+				<input type="tel" id="telephone"  name="telephone" size="34" style="width: 264px" placeholder="(989)275-5555" required/><br/></p>
+			<p><label for="Email"  >E-Mail Address:</label>
+				<input type="email" id="email"  name="email" size="50" style="width: 261px" placeholder="yourname@yourisp.com" required/></p>
+		</fieldset>
+
+		<fieldset class="center">
+			<legend>Number of Bales:</legend>
+			<div style="padding-left:30px;">
+				<h3>Total Bales</h3>
+					<p><label for="1-20">1-20</label>	
+		      	<input type="radio" name="options" id="1-20" value="1-20" class="shortinputButton" /></p>
+		      		<p><label for="21-40">21-40</label>
+		        <input type="radio" name="options" id="21-40" value="21-40" class="shortinputButton"/></p>
+		        	<p> <label for="41-60">41-60</label>
+		        <input type="radio" name="options" id="41-60" value="41-60" class="shortinputButton"/></p>
+		        	<p><label for="61-80">61-80</label>
+				<input type="radio" name="options" id="61-80" value="61-80" class="shortinputButton"/></p>
+					<p><label for="81-100">81-100</label>
+				<input type="radio" name="options" id="81-100" value="81-100" class="shortinputButton"/></p>
+					<p><label for="100+">100+</label>
+				<input type="radio" name="options" id="100+" value="100+" class="shortinputButton"/></p>
+			<div>	
+				<h3>Type of Hay:</h3>
+					<p><input type="checkbox" name="Boxes" id="first-cutting" value="first-cutting" class="shortinputButton">
+				<label for="First Cutting">First Cutting</label></p>
+					<p><input type="checkbox" name="Boxes" id="second-cutting" value="second-cutting" class="shortinputButton">
+			    <label for="Second Cutting">Second Cutting</label></p>
+					<p> <input type="checkbox" name="Boxes" id="round-bales" value="round-bales" class="shortinputButton">
+			    <label for="Round Bales">Round Bales</label></p>
+					<p> <input type="checkbox" name="Boxes" id="Just Looking" value="Just Looking" class="shortinputButton">
+			    <label for="Just Looking">Just Looking</label></p>
+					<p> <input type="checkbox" name="Boxes" id="unsure" value="unknown major" class="shortinputButton">
+			    <label for="unsure">Don't know</label></p>    
+	   </fieldset>
+		<fieldset class="center">
+   		   <legend> Days &amp; Times:</legend>
+			<div style="padding-left:30px;">	
+  			<p>Please select the  times that work best for you (to select more than one time, press CTL while clicking)</p>
+    		<p>Meeting Days:<br>
+			<select id="Day:" name="Day:" size="5" multiple="multiple" >
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday </option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday ">Thursday</option>
+				<option value="Friday">Friday</option>
+				<option value="Saturday">Saturday</option>
+				<option value="Sunday">Sunday</option>
+			</select></p>
+        <p>Time Preferences:<br>
+    	<input  list="select2" id="time" name="time" placeholder="Please make a selection" >
+    	<datalist id="select2">
+				<option value="6:00-7:00 a.m.">
+        		<option value="7:00-8:00 a.m.">
+        		<option value="8:00-9:00 a.m.">
+        		<option value="9:00-10:00 a.m.">
+				<option value="10:00-11:00 a.m.">
+				<option value="noon">
+				<option value="1:00-2:00  p.m.">
+				<option value="2:00-3:00 p.m.">
+				<option value="3:00-4:00 p.m.">
+				<option value="4:00-5:00 p.m.">
+				<option value="5:00-6:00 p.m.">
+				<option value="6:00-7:00 p.m.">	
+        		<option value="I need Time to Think">
+		</datalist></p>
+		</div>
+	</fieldset>
+	<fieldset class="center">
+		<legend>Comments:</legend>
+		<p>Please enter your comments in the space provided:<br/>
+		  <textarea rows="10" cols="50" id="TextArea" name="TextArea" wrap="soft" style="font-size:14pt;"></textarea>
+		</p>
+		<p style="padding-bottom:20px; text-align:center;">
+	      <input type="submit" class="inputButton" value="Submit" id="button"  style="margin-right:20px"/> 
+		  <input type="reset"  class="inputButton" value="Reset" id="button"/> 
+		</p>
+	</fieldset>
+	</form>
+</body>
+</html>

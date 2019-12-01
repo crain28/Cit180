@@ -1,0 +1,112 @@
+/* index.css 
+For style on index.html Page*/
+body {
+	border-image: url("media/Round-Bales");
+	font-family:helvetica, sans-serif;
+	font-size: 18px; 
+	line-height: 24px;
+	margin:0;
+	padding:0;
+	border:0;
+	background-color:rgb(44, 163, 44);
+}
+h1 {
+  font: 400 3.5em/125% Helvetica, Sans-serif;
+  color: rgb(225, 247, 26);
+  text-shadow: 1px 1px 0px #000000, 4px 4px 0px rgba(0, 0, 0, 0.979);
+  text-align:center;
+  z-index:2;
+}
+nav {
+	margin:50px auto; 
+	text-align: center;
+}
+
+nav ul {
+    background: linear-gradient(0deg, rgb(232, 253, 46),rgb(179, 209, 68), rgb(51, 170, 57)); 
+	box-shadow: 6px 6px 6px rgba(211, 230, 40, 0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	color:black;
+	font-weight:900;
+	width:100%;
+	display:inline-table;
+}
+nav ul li {
+	display:inline-table;
+}
+nav ul li a {
+	display: block; 
+	padding: 25px 40px;
+	color: rgb(102, 109, 5); 
+	text-decoration: none;
+}
+nav ul li:hover {
+    background: linear-gradient(180deg, white, #2f6aa5, rgb(124, 124, 124)); 
+}
+nav ul li:hover a {
+	color:rgb(54, 194, 77);
+}
+nav ul li:hover > ul {
+	display:flex;
+	flex-direction:column;
+	width:30%;
+}
+	
+nav ul ul {
+	display: none;
+    background: linear-gradient(180deg, Black, rgb(133, 133, 133)); 
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	z-index:10;
+}
+nav ul ul li {
+	display:block; 
+	border-top: 1px solid indigo;
+	border-bottom: 1px solid #757575; 
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #757575;
+}	
+nav ul ul li a:hover {
+	background: rgb(133, 145, 129);
+	color:rgb(211, 205, 193);
+}
+footer{
+    margin-top:200px;
+}
+.icon-bar {
+    width: 100%; 
+    background:linear-gradient(180deg, rgb(216, 233, 64),black);
+    overflow: auto; 
+}
+
+.icon-bar a {
+    float: left;
+    text-align: center; 
+    width: 20%; 
+    padding: 12px 0; 
+    transition: all 0.3s ease;
+    color: rgb(85, 255, 0); 
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: rgb(167, 61, 61); 
+}
+article{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: rgb(32, 109, 32);
+	color: rgb(255, 255, 255);
+	padding: 1px;
+	border: 0px;
+	margin-top: 2%;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-bottom: 1%;
+	}
